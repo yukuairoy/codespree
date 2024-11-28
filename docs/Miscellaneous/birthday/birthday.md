@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # The Birthday Problem
 The [birthday problem](https://en.wikipedia.org/wiki/Birthday_problem) asks for the probability that, in a set of $n$ randomly chosen people, at least two will share a birthday[^1]. We assume that birthdays are distributed equally among all days of the year and neglect leap years.
 

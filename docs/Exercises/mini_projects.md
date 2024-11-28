@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Mini-Projects
 
 This document contains a collection of mini-projects to enhance your programming skills and understanding of core concepts. These projects are perfect for:

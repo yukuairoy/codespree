@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 ## Rooted Trees
 
 In a [**rooted tree**](https://en.wikipedia.org/wiki/Tree_(graph_theory)#Rooted_tree), one of its vertices is designated as the root. The root provides the tree with an orientation from **parent** to **child**. A node with no child is called a **leaf**. A node that's not a leaf is called an **internal** node.

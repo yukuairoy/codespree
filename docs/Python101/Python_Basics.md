@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Python Basics
 
 ## Functions

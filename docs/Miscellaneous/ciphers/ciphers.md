@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Classical Ciphers
 The main classical cipher types are [transposition ciphers](https://en.wikipedia.org/wiki/Transposition_cipher), which rearrange the order of letters in a message (e.g., 'hello world' becomes 'ehlol owrdl' in a trivially simple rearrangement scheme), and [substitution ciphers](https://en.wikipedia.org/wiki/Substitution_cipher), which systematically replace letters or groups of letters with other letters or groups of letters (e.g., 'fly at once' becomes 'gmz bu podf' by replacing each letter with the one following it in the Latin alphabet).
 

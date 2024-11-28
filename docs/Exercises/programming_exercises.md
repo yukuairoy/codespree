@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Programming Exercises
 
 This document features simple programming exercises to sharpen your skills in foundational concepts like strings, numbers, lists, and algorithms. Ideal for:

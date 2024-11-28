@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 ## $k$-ary Trees
 A [**$k$-ary tree**](https://en.wikipedia.org/wiki/M-ary_tree) is a [rooted tree](rooted_tree.md) in which each node has no more than $k$ children.
 

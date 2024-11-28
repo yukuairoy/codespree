@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 ## Trees and Forests
 
 A [**forest**](https://en.wikipedia.org/wiki/Tree_(graph_theory)#Forest) is an [acyclic](https://en.wikipedia.org/wiki/Cycle_(graph_theory)) [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)). Any two [vertices](https://en.wikipedia.org/wiki/Vertex_(graph_theory)) in a forest are connected by at most one [path](https://en.wikipedia.org/wiki/Path_(graph_theory)).
