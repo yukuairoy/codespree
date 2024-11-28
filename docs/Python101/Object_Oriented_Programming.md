@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Object-Oriented Programming
 
 ## Introduction
