@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # About CodeSpree
 
 Welcome to CodeSpree, an evolving platform designed to make programming approachable and engaging. Whether you're learning Python basics, diving into advanced concepts, or solving fun challenges, CodeSpree is here to spark your curiosity and support your growth.
