@@ -78,7 +78,7 @@ Sample output for $n=23$:
 
 The reverse problem is to find, for a fixed probability p, the smallest $n$ for which the probability $p(n) \geq p$.
 
-Since $p(n)$ is monotonically increasing, n can be found using **binary search**:
+Since $p(n)$ is monotonically increasing, $n$ can be found using [binary search](https://en.wikipedia.org/wiki/Binary_search):
 
 ```python
 def find_n(p: float) -> int:

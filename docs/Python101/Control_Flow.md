@@ -62,6 +62,7 @@ The `range()` function generates a sequence of numbers:
 ```python
 range(start, stop, step)
 ```
+
 - `start`: Starting value (default is `0`).
 - `stop`: End of the sequence (exclusive).
 - `step`: Increment or decrement (default is `1`).

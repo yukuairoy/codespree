@@ -33,38 +33,21 @@ python -m ensurepip --upgrade
 
 To avoid dependency conflicts between projects, it’s highly recommended to use a virtual environment. Virtual environments isolate dependencies for each project, keeping your global Python installation clean.
 
-1. Create a Virtual Environment
-
-You can create a virtual environment with the following command:
-
+1. Create a Virtual Environment:
 ```bash
 python -m venv myenv
 ```
 
-2. Activate the Virtual Environment
-
-Activating your virtual environment is the next step:
-
-- **Windows**:
-  ```bash
-  myenv\Scripts\activate
-  ```
-
-- **Linux/macOS**:
-  ```bash
-  source myenv/bin/activate
-  ```
-
-Once activated, your terminal prompt will change to indicate you’re working within the virtual environment:
-
+2. Activate the Virtual Environment:
+```bash
+source myenv/bin/activate
 ```
+Once activated, your terminal prompt will change to indicate you’re working within the virtual environment:
+```bash
 (myenv) user@machine:~/project$
 ```
 
-3. Install Packages in the Virtual Environment
-
-With the virtual environment activated, install packages using `pip`:
-
+3. Install Packages in the Virtual Environment:
 ```bash
 pip install [package_name]
 ```
