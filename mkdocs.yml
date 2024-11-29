@@ -3,7 +3,8 @@ site_description: Learn Programming with Kuai - Tutorials and Exercises.
 site_author: Kuai Yu
 theme:
   name: material
-  favicon: images/favicon.ico
+  favicon: images/favicon.jpeg
+  logo: images/favicon.jpeg
   color_mode: auto
   user_color_mode_toggle: true
   locale: en
@@ -33,6 +34,9 @@ nav:
       - The Birthday Problem: Miscellaneous/birthday/birthday.md
 
 markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
   - footnotes
   - pymdownx.arithmatex:
       generic: true
@@ -40,12 +44,12 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
   - toc:
       permalink: true
-  - admonition
   - codehilite:
       guess_lang: false
       linenums: true
