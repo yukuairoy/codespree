@@ -19,6 +19,20 @@ def greet(name="User"):
     print(f"Hello, {name}!")
 ```
 
+### Functions as First-Class Citizens
+
+In Python, functions are first-class citizens. This means you can use functions as variables, pass them as arguments to other functions, and return them from functions.
+
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+def caller(func, arg):
+    return func(arg)
+
+print(caller(greet, "Alice"))  # Output: Hello, Alice!
+```
+
 ---
 ## Data Types
 
@@ -125,4 +139,5 @@ Useful for longer explanations.
 print("Hello!")
 ```
 
+---
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T416OJAV)
