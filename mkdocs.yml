@@ -2,9 +2,12 @@ site_name: CodeSpree
 site_description: Learn Programming with Kuai - Tutorials and Exercises.
 site_author: Kuai Yu
 site_url: https://yukuairoy.github.io/codespree/
-repo_url: https://github.com/yukuairoy/codespree
+
 theme:
   name: material
+  palette:
+    primary: red
+    accent: indigo
   favicon: images/favicon.jpeg
   features:
     - navigation.expand
@@ -22,15 +25,15 @@ theme:
 
 nav:
   - Home: index.md
-  - Exercises:
-      - Programming Exercises: Exercises/programming_exercises.md
-      - Mini-Projects: Exercises/mini_projects.md
   - Python 101:
       - Python Basics: Python101/Python_Basics.md
       - Control Flow: Python101/Control_Flow.md
       - OOP: Python101/Object_Oriented_Programming.md
       - Managing Imports: Python101/Managing_Imports.md
       - Dependency Management: Python101/pip.md
+  - Exercises:
+      - Programming Exercises: Exercises/programming_exercises.md
+      - Mini-Projects: Exercises/mini_projects.md
   - Miscellaneous:
       - Ciphers: Miscellaneous/ciphers/ciphers.md
       - Trees: 
@@ -70,8 +73,10 @@ plugins:
   - minify:
       minify_html: true
   - social
+  - offline
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/kuai/
