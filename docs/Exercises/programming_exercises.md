@@ -14,6 +14,7 @@ This document features simple programming exercises to sharpen your skills in fo
 * Practicing unit testing, a crucial skill for professional development.
 
 ---
+
 ## Problem 1: Vowel Counter
 
 Write a program that counts the number of vowels in a given word. Vowels are `a`, `e`, `i`, `o`, `u` (case-insensitive).
@@ -29,9 +30,13 @@ Output: 5
 
 Input: "rhythm"
 Output: 0
+
+Input: "aquarium"
+Output: 4
 ```
 
 ---
+
 ## Problem 2: Reverse a List
 
 Write a function to reverse a list.
@@ -46,6 +51,7 @@ Output: [30, 20, 10]
 ```
 
 ---
+
 ## Problem 3: Perfect Square
 
 Check if a number is a [perfect square](https://en.wikipedia.org/wiki/Square_number). A perfect square is an integer that is the square of another integer.
@@ -64,20 +70,25 @@ Output: True
 ```
 
 ---
-## Problem 4: Sum of Digits in a Number
 
-Write a function to calculate the sum of digits in a given number.
+## Problem 4: Second Largest
 
-**Examples:**
+Find the second largest number in an array.
+
+**Examples**
 ```plaintext
-Input: 12345
-Output: 15
+Input: [10, 5, 8, 12]
+Output: 10
 
-Input: 9876
-Output: 30
+Input: [1, 2, 3, 4, 5]
+Output: 4
+
+Input: [5, 5, 5, 5]
+Output: 5
 ```
 
 ---
+
 ## Problem 5: [Sum of Digits](https://en.wikipedia.org/wiki/Digital_root)
 
 Add all digits in a number until you get a single digit.
@@ -96,36 +107,34 @@ Output: 5
 
 ---
 
-## Problem 6: Second Largest
+## Problem 6: Find the Extra Character
 
-Find the second largest number in an array.
+Given two strings, `A` and `B`, where `A` has exactly one extra character compared to `B`, find that character.
 
-**Examples**
+**Examples:**  
 ```plaintext
-Input: [10, 5, 8, 12]
-Output: 10
+Input: A = "atcb42c", B = "atb42c"
+Output: "c"
 
-Input: [1, 2, 3, 4, 5]
-Output: 4
-
-Input: [5, 5, 5, 5]
-Output: 5
+Input: A = "abcd", B = "abc"
+Output: "d"
 ```
 
 ---
+
 ## Problem 7: Array Rotation
 
 Rotate an array by `k` positions to the right.
 
 **Examples:**
 ```plaintext
-Input: [1, 2, 3, 4], k=2
+Input: [1, 2, 3, 4], k = 2
 Output: [3, 4, 1, 2]
 
-Input: [10, 20, 30, 40, 50], k=3
+Input: [10, 20, 30, 40, 50], k = 3
 Output: [30, 40, 50, 10, 20]
 
-Input: [1, 2, 3], k=0
+Input: [1, 2, 3], k = 0
 Output: [1, 2, 3]
 ```
 
@@ -153,6 +162,7 @@ Output:
 ```
 
 ---
+
 ## Problem 9: Email Validator
 
 Write a program that validates an email address based on the following rules:
@@ -175,6 +185,7 @@ Output: Invalid
 ```
 
 ---
+
 ## Problem 10: Phone Number Formatter
 
 Write a program that formats a 10-digit phone number into the format `(XXX) XXX-XXXX`.
@@ -192,20 +203,25 @@ Output: "(123) 456-7890"
 ```
 
 ---
-## Problem 11: Find the Extra Character
 
-Given two strings, `A` and `B`, where `A` has exactly one extra character compared to `B`, find that character.
+## Problem 11: Rearrange Vowels in a String
 
-**Examples:**  
+Write a function to rearrange the vowels in a string in alphabetical order, placing uppercase vowels before lowercase vowels. Keep all consonants in their original positions.
+
+**Examples:**
 ```plaintext
-Input: A = "atcb42c", B = "atb42c"
-Output: "c"
+Input: s = "coding"
+Output: "cidong"
 
-Input: A = "abcd", B = "abc"
-Output: "d"
+Input: s = "AaEeIiOoUu"
+Output: "AEIOUaeiou"
+
+Input: s = "alphabet"
+Output: "alphabet"
 ```
 
 ---
+
 ## Problem 12: First Non-Repeating Character
 
 Given a string, find the index of the first non-repeating character. Return `-1` if no such character exists.
@@ -220,6 +236,7 @@ Output: 0
 ```
 
 ---
+
 ## Problem 13: K-th Fibonacci Number
 
 Find the `k-th` [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
@@ -234,6 +251,7 @@ Output: 55
 ```
 
 ---
+
 ## Problem 14: Add Two Numbers Represented as Strings
 
 Write a function to add two numbers represented as strings. Return the sum as a string.
@@ -248,6 +266,7 @@ Output: "1000"
 ```
 
 ---
+
 ## Problem 15: Product of Array Except Self
 
 Given an array of integers, return a new array such that each element at index `i` is the product of all numbers in the original array except the one at `i`.
@@ -265,18 +284,19 @@ Output: [2, 3, 6]
 
 ## Problem 16: Largest Sum of Non-Adjacent Numbers
 
-Given a list of integers, write a function that returns the largest sum of non-adjacent numbers. Numbers can be zero or negative.
+Given a list of integers, write a function that returns the largest sum of two non-adjacent numbers.
 
 **Examples:**  
 ```plaintext
 Input: [2, 4, 6, 8]
-Output: 12
+Output: 12 (4+8)
 
 Input: [5, 1, 1, 5]
-Output: 10
+Output: 10 (5+5)
 ```
 
 ---
+
 ## Problem 17: Implement [Power Function](https://en.wikipedia.org/wiki/Exponentiation)
 
 Implement the function `pow(x, y)` to compute \(x^y\).
@@ -291,6 +311,7 @@ Output: 0.04
 ```
 
 ---
+
 ## Problem 18: [Combinations](https://en.wikipedia.org/wiki/Combination)
 
 Write a function to compute the number of ways to choose `k` items from `n` items (combinations), denoted as \(C(n, k)\).
@@ -305,6 +326,7 @@ Output: 20
 ```
 
 ---
+
 ## Problem 19: Count Unique Characters in a String
 
 Write a function that counts the number of unique characters in a string.
@@ -319,6 +341,7 @@ Output: 4
 ```
 
 ---
+
 ## Problem 20: Check for [Palindrome](https://en.wikipedia.org/wiki/Palindrome)
 
 Write a function to check if a given string is a palindrome.
@@ -333,6 +356,7 @@ Output: False
 ```
 
 ---
+
 ## Problem 21: Check if Two Strings are [Anagrams](https://en.wikipedia.org/wiki/Anagram)
 
 Write a function to check if two strings are anagrams of each other.
@@ -347,6 +371,7 @@ Output: False
 ```
 
 ---
+
 ## Problem 22: Check If a Number is [Prime](https://en.wikipedia.org/wiki/Prime_number)
 
 Write a function to determine if a given number is prime.
@@ -362,6 +387,7 @@ Output: False
 ```
 
 ---
+
 ## Problem 23: Find the Missing Number
 
 Given an array containing `n` distinct numbers taken from the range `[0, n]`, find the missing number.
@@ -377,6 +403,7 @@ Output: 0
 ```
 
 ---
+
 ## Problem 24: String Reversal
 
 Write a function to reverse a string.
@@ -388,6 +415,7 @@ Output: "olleh"
 ```
 
 ---
+
 ## Problem 25: Reverse Words
 
 Given a sentence, reverse the order of words.
@@ -403,6 +431,7 @@ Output: "world! Hello"
 ```
 
 ---
+
 ## Problem 26: Convert a List to a Single String
 
 Write a function that takes a list of strings and concatenates them into a single string, separated by commas.
@@ -415,6 +444,7 @@ Output: "apple,banana,cherry"
 ```
 
 ---
+
 ## Problem 27: Convert Temperature
 
 Write a function to [convert temperature between Celsius and Fahrenheit](https://en.wikipedia.org/wiki/Fahrenheit#Conversion_(specific_temperature_point)).
@@ -429,6 +459,7 @@ Output: 0
 ```
 
 ---
+
 ## Problem 28: Diamond Pattern
 
 Print a diamond pattern using asterisks (`*`).
@@ -457,6 +488,7 @@ Output:
 ```
 
 ---
+
 ## Problem 29: Check if a String is a [Pangram](https://en.wikipedia.org/wiki/Pangram)
 
 Write a function to check if a given string is a pangram (contains every letter of the alphabet at least once).
@@ -469,6 +501,7 @@ Output: True
 ```
 
 ---
+
 ## Problem 30: Count Words in a String
 
 Write a program to count the number of words in a given string.
@@ -494,6 +527,7 @@ Output: 120
 ```
 
 ---
+
 ## Problem 32: Compute [Double Factorial](https://en.wikipedia.org/wiki/Double_factorial)
 
 Write a function that computes the double factorial of a given non-negative integer `n`.  
@@ -511,6 +545,7 @@ Explanation: 7!! = 7 * 5 * 3 * 1 = 105
 ```
 
 ---
+
 ## Problem 33: Title Case
 
 Convert a sentence to [title case](https://en.wikipedia.org/wiki/Title_case) where each word starts with a capital letter, and the rest of the letters in the word are lowercase.
@@ -528,6 +563,7 @@ Output: "Programming Is Fun"
 ```
 
 ---
+
 ## Problem 34: Check [Perfect Number](https://en.wikipedia.org/wiki/Perfect_number)
 
 Write a function to check if a number is a perfect number. A perfect number is a positive integer equal to the sum of its proper divisors (excluding itself).
@@ -540,7 +576,7 @@ Output: True
 
 ---
 
-## Problem 35: Count Prime Factors of a Number
+## Problem 35: Prime Factors of a Number
 
 Write a function to count the number of prime factors of a given positive integer. A prime factor is a prime number that divides the given number exactly.
 
@@ -568,6 +604,7 @@ Explanation: The prime factors of 84 are 2, 3, and 7.
 ```
 
 ---
+
 ## Problem 36: Check [Derangement](https://en.wikipedia.org/wiki/Derangement)
 
 Write a function to check if one permutation of a string is a derangement of another. A derangement means no character appears in its original position.
@@ -582,6 +619,7 @@ Output: False
 ```
 
 ---
+
 ## Problem 37: Check [Narcissistic Number](https://en.wikipedia.org/wiki/Narcissistic_number)
 
 Write a function to check if a number is a narcissistic number. A number is narcissistic if the sum of its digits raised to the power of the number of digits equals the number itself.
@@ -593,6 +631,7 @@ Output: True
 ```
 
 ---
+
 ## Problem 38: Validate a [Sudoku](https://en.wikipedia.org/wiki/Sudoku) Puzzle
 
 Write a function to validate if a given 9x9 Sudoku board is valid.
@@ -608,6 +647,7 @@ Output: True
 ```
 
 ---
+
 ## Problem 39: Reverse Digits of a Number
 
 Write a function to reverse the digits of an integer.
@@ -622,7 +662,8 @@ Output: -321
 ```
 
 ---
-## Problem 40: Count Lattice Points in a Circle
+
+## Problem 40: Lattice Points in a Circle
 
 Write a function to count all integer lattice points `(x, y)` inside or on the boundary of a circle of radius `r`.
 
@@ -633,7 +674,8 @@ Output: 13
 ```
 
 ---
-## Problem 41: Implement [Run-Length Encoding](https://en.wikipedia.org/wiki/Run-length_encoding)
+
+## Problem 41: [Run-Length Encoding](https://en.wikipedia.org/wiki/Run-length_encoding)
 
 Write a function to compress a string using run-length encoding.
 
@@ -644,7 +686,8 @@ Output: "a3b2c1"
 ```
 
 ---
-## Problem 42: Find Majority Element
+
+## Problem 42: Majority Element
 
 Given an array of length `n`, find the majority element. The majority element is the element that appears more than `⌊n/2⌋` times.  
 Assume the array always has a majority element.
@@ -659,6 +702,7 @@ Output: 8
 ```
 
 ---
+
 ## Problem 43: Password Validator
 
 Write a function that validates if a password meets all the following rules:
@@ -689,7 +733,8 @@ Output: False (contains space)
 ```
 
 ---
-## Problem 44: Find Longest Word in a Sentence
+
+## Problem 44: Longest Word in a Sentence
 
 Write a function that takes a sentence as input and returns the longest word. If there are multiple words of the same length, return the first one.
 
@@ -703,6 +748,7 @@ Output: "programming"
 ```
 
 ---
+
 ## Problem 45: Pairs
 
 Implement a function `count_pairs(n, limit)` to determine the number of valid `(x, y)` pairs such that `x + y = n` and integers `x` and `y` satisfy the condition `0 <= x, y <= limit`.  
@@ -722,6 +768,7 @@ Explanation: (2, 5), (3, 4), (4, 3), (5, 2)
 ```
 
 ---
+
 ## Problem 46: Smallest Even Multiple
 
 Given a positive integer `n`, return the smallest positive integer that is a multiple of both `2` and `n`.
@@ -741,7 +788,8 @@ The smallest multiple of both 12 and 2 is 12.
 ```
 
 ---
-## Problem 47: Number of Common Factors
+
+## Problem 47: Common Factors
 
 Given two positive integers `a` and `b`, return the number of common factors of `a` and `b`.  
 An integer `x` is a common factor of `a` and `b` if `x` divides both `a` and `b`.
@@ -760,7 +808,8 @@ The common factors of 25 and 30 are 1, 5.
 ```
 
 ---
-## Problem 48: Check [Arithmetic Progression](https://en.wikipedia.org/wiki/Arithmetic_progression)
+
+## Problem 48: [Arithmetic Progression](https://en.wikipedia.org/wiki/Arithmetic_progression)
 
 Given an array of integers, determine if the numbers form an arithmetic progression (a sequence where the difference between consecutive terms is constant).
 
@@ -775,6 +824,7 @@ Output: False
 ```
 
 ---
+
 ## Problem 49: Most Frequent Digit
 
 Given a positive integer, determine which digit occurs most frequently. If there is a tie, return the smallest digit.
@@ -790,7 +840,8 @@ Output: 1
 ```
 
 ---
-## Problem 50: Generate a [Geometric Sequence](https://en.wikipedia.org/wiki/Geometric_progression)
+
+## Problem 50: [Geometric Sequence](https://en.wikipedia.org/wiki/Geometric_progression)
 
 Write a function to generate the first `n` terms of a geometric progression, given the first term `a` and common ratio `r`.
 
@@ -804,4 +855,208 @@ Output: [1, 0.5, 0.25, 0.125]
 ```
 
 ---
+
+## Problem 51: Truncated Mean
+
+Write a function to calculate the truncated mean of a list of integers. The truncated mean is the average of the numbers in the list after removing the smallest and largest values. If there are multiple occurrences of the smallest or largest value, only one instance of each is removed.  
+Assume that the size of the input array is at least three.
+
+**Examples:**
+```plaintext
+Input: [2, 3, 4, 5, 6]
+Output: 4
+Explanation: Removing the smallest (2) and largest (6) values leaves [3, 4, 5]. The mean is (3 + 4 + 5) / 3 = 4.
+
+Input: [1, 2, 3, 2, 3, 1]
+Output: 2
+Explanation: Removing one smallest (1) and one largest (3) value leaves [1, 2, 2, 3]. The mean is (1 + 2 + 2 + 3) / 4 = 2.
+```
+
+---
+
+## Problem 52: Sort by Age
+
+Given two arrays - one containing `names` and another containing corresponding `ages` - write a function to sort people by their ages in _descending_ order. Return the sorted list of names.  
+Assume the values of `ages` are distinct.
+
+**Examples:**
+```plaintext
+Input: names = ["Alice", "Bob", "Charlie"], ages = [24, 45, 70]
+Output: ["Charlie", "Bob", "Alice"]
+
+Input: names = ["Mark", "Emma", "Alex", "Sarah"], ages = [75, 18, 41, 65]
+Output: ["Mark", "Sarah", "Alex", "Emma"]
+```
+
+---
+
+## Problem 53: Partition Number
+
+Given a positive integer `n`, find the partition integer `x` where the sum of all integers from 1 to `x` equals the sum of all integers from `x` to `n`.  
+If no such integer exists, return `-1`.
+
+**Examples:**
+```plaintext
+Input: 8
+Output: 6
+Explanation: 1 + 2 + 3 + 4 + 5 + 6 = 6 + 7 + 8
+
+Input: 49
+Output: 35
+Explanation: 1 + 2 + ... + 35 = 35 + 36 + ... + 49
+
+Input: 1
+Output: 1
+Explanation: 1 is the pivot integer since 1 = 1
+
+Input: 15
+Output: -1
+Explanation: No such integer exist
+```
+
+---
+
+## Problem 54: Smallest String After One Swap
+
+You are given a string `str`. In one operation, you can swap any two characters at adjacent positions.
+Your task is to return the [alphabetically](https://en.wikipedia.org/wiki/Alphabetical_order) smallest string that can be obtained by performing exactly one swap operation on the string.
+
+**Examples**
+```plaintext
+Input: "deed"
+Output: "dede"
+
+Input: "abcd"
+Output: "abcd"
+Explanation: Any swap would result in a alphabetically larger string
+
+Input: "alphabet"
+Output: "alhpabet"
+```
+
+---
+
+## Problem 55: Word Chain
+
+A list of words is valid if each word starts with the last letter of the previous word. Write a function to check if the given sequence of words is valid.  
+Assume the words are case-insensitive.
+
+**Examples**
+
+```plaintext
+Input: ["hello", "orange", "elephant", "tree"]
+Output: True
+Explanation: "hello" -> "orange" -> "elephant" -> "tree".
+
+Input: ["cat", "dog", "pig", "goat"]
+Output: False
+Explanation: "dog" does not start with "t".
+
+Input: ["Apple", "Elephant", "tiger"]
+Output: True
+Explanation: Case is ignored, so "Apple" -> "Elephant" -> "tiger" is valid.
+
+Input: ["zebra"]
+Output: True
+Explanation: A single word is trivially valid.
+
+Input: []
+Output: True
+Explanation: An empty list is trivially valid.
+```
+
+---
+
+## Problem 56: Detect Cyclic Words
+
+Write a function to check if two strings are cyclic permutations of each other. Two strings are cyclic permutations if one string can be rotated to match the other.
+
+**Examples:**
+```plaintext
+Input: s1 = "abcde", s2 = "deabc"
+Output: True
+Explanation: Rotating "deabc" gives "abcde".
+
+Input: s1 = "hello", s2 = "lohel"
+Output: True
+
+Input: s1 = "hello", s2 = "lolhe"
+Output: False
+```
+
+---
+
+## Problem 57: Find Missing Page Number
+
+Imagine you are given a book where pages are labeled from 1 to  n , but one page is missing. Write a function to find the missing page number from a given list of page numbers.  
+Assume the input is _sorted_.
+
+**Examples:**
+```plaintext
+Input: [1, 2, 3, 4, 6]
+Output: 5
+
+Input: [2, 3, 4, 5]
+Output: 1
+```
+
+**Bonus:** Can we solve this problem faster than linear time?
+
+---
+
+## Problem 58: Alternating Sum of Digits
+
+Write a function to calculate the alternating sum of digits in an integer. Alternate between adding and subtracting each digit from left to right.
+
+**Examples:**
+```plaintext
+Input: 12345
+Output: 1 - 2 + 3 - 4 + 5 = 3
+
+Input: 9876
+Output: 9 - 8 + 7 - 6 = 2
+```
+
+---
+
+## Problem 59: Palindromic Chain
+
+A sequence of words is a **palindromic chain** if the words form a palindrome when read as a continuous sentence (ignoring spaces and punctuation). Write a function to check if a list of words forms a palindromic chain.
+
+**Examples:**
+```plaintext
+Input: ["madam", "im", "adam"]
+Output: True
+Explanation: Combining the words gives "madamimadam", which is a palindrome.
+
+Input: ["hello", "world"]
+Output: False
+Explanation: "helloworld" is not a palindrome.
+
+Input: ["race", "car", "race"]
+Output: True
+Explanation: "racecarrace" is a palindrome.
+```
+
+---
+
+## Problem 60: Longest Increasing Subarray
+
+A **subarray** is a _contiguous_ portion of an array. For example, in the array `[1, 2, 3, 4]`, `[1, 2]` and `[3, 4]` are subarrays, but `[1, 3]` is not because the elements are not contiguous.
+
+Write a function to find the length of the longest subarray in a list of integers where the elements are strictly increasing.
+
+**Examples:**
+```plaintext
+Input: [1, 2, 3, 1, 2]
+Output: 3
+Explanation: The subarray [1, 2, 3] is the longest increasing subarray.
+
+Input: [5, 1, 2, 3, 0]
+Output: 3
+Explanation: The subarray [1, 2, 3] is the longest.
+```
+
+---
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T416OJAV)
