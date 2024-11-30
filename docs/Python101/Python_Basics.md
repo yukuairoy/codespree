@@ -10,7 +10,8 @@ comments: true
 ```python
 def greet(name):
     return f"Hello, {name}!"
-    print(greet("Alice"))
+
+greet("Alice")
 ```
 
 ### Default Arguments
