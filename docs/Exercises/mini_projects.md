@@ -12,31 +12,32 @@ This document contains a collection of mini-projects to enhance your programming
 * Preparing for technical interviews by tackling practical problems.
 
 ---
+
 ## Problem 1: Password Strength Checker
 
 Create a function that evaluates password strength based on the following criteria:
 
 **Weak Password (Return "weak"):**
 
-- Length less than 8 characters, OR
-- Contains only letters, OR
-- Contains only numbers
+* Length less than 8 characters, OR
+* Contains only letters, OR
+* Contains only numbers
 
 **Medium Password (Return "medium"):**
 
-- Length 8-11 characters, AND
-- Contains at least one letter and one number
+* Length 8-11 characters, AND
+* Contains at least one letter and one number
 
 **Strong Password (Return "strong"):**
 
-- Length 12 or more characters, AND
-- Contains at least one uppercase letter
-- Contains at least one lowercase letter
-- Contains at least one number
-- Contains at least one special character from @#$%^&*!
+* Length 12 or more characters, AND
+* Contains at least one uppercase letter
+* Contains at least one lowercase letter
+* Contains at least one number
+* Contains at least one special character from @#$%^&\*!
 
 **Examples:**
-```plaintext
+```
 Input: "password123"
 Output: "medium"
 
@@ -54,7 +55,35 @@ Output: "medium"
 ```
 
 ---
-## Problem 2: Validate Credit Card
+
+## Problem 2: Parking System
+
+Design a parking system for a parking lot with three types of parking spaces: **big**, **medium**, and **small**. Each type has a fixed number of parking slots available.
+
+Implement the `ParkingSystem` class with the following methods:
+
+* `__init__(self, big: int, medium: int, small: int)`: Initializes an object of the `ParkingSystem` class. The constructor accepts three integers representing the number of available parking slots for **big**, **medium**, and **small** cars, respectively.
+* `addCar(self, car_type: str) -> bool`: Checks if there is an available parking slot for the car of the given `car_type`. If there is an available slot for the given car type, the car is parked, the available slots for that type are reduced by 1, and the method returns `True`. If no slots are available for the car type, the method returns `False`.
+
+**Example**:
+
+```python
+# Initialize the parking system with:
+# 2 slots for big cars, 1 slot for medium cars, and 0 slots for small cars.
+ps = ParkingSystem(2, 1, 0)
+
+# Try to park cars of different types.
+print(ps.addCar("big"))     # Output: True (1 slot for big cars now remaining)
+print(ps.addCar("big"))     # Output: True (0 slots for big cars now remaining)
+print(ps.addCar("medium"))  # Output: True (0 slots for medium cars now remaining)
+print(ps.addCar("small"))   # Output: False (no slots available for small cars)
+print(ps.addCar("medium"))  # Output: False (no slots available for medium cars)
+print(ps.addCar("big"))     # Output: False (no slots available for big cars)
+```
+
+---
+
+## Problem 3: Validate Credit Card
 
 The [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) is a checksum formula used to validate credit card numbers.
 
@@ -71,7 +100,7 @@ The checksum is `s1 + s2`. Luhn algorithm determines `cc_no` is valid when the c
 
 **Example**
 
-```plaintext
+```
 If the credit card number is 49927398716:
 
 1. Reverse the digits: 61789372994
@@ -87,7 +116,8 @@ The checksum is s1 + s2 = 70 which ends in zero. So, 49927398716 is valid.
 Your task is to implement the Luhn algorithm.
 
 ---
-## Problem 3: Guess the Number
+
+## Problem 4: Guess the Number
 
 Build a game where the player guesses a number randomly selected by the computer. The game should:
 
@@ -98,7 +128,7 @@ Build a game where the player guesses a number randomly selected by the computer
 5. Optionally, restart the game for another round after completion.
 
 **Examples:**
-```plaintext
+```
 Computer: "Guess a number between 1 and 100."
 Player: 50
 Computer: "Higher."
@@ -109,7 +139,8 @@ Computer: "Correct! You took 3 attempts."
 ```
 
 ---
-## Problem 4: Hangman Game
+
+## Problem 5: Hangman Game
 
 Create a Hangman game where:
 
@@ -120,7 +151,7 @@ Create a Hangman game where:
 5. The game ends when the player either guesses the word or uses all attempts.
 
 **Examples:**
-```plaintext
+```
 Word: "python"
 Player guesses: "a", "e", "o"
 Display: "_ _ _ _ o _"
@@ -132,7 +163,8 @@ Game Result: Player Wins!
 ```
 
 ---
-## Problem 5: Tic-Tac-Toe
+
+## Problem 6: Tic-Tac-Toe
 
 Build a two-player Tic-Tac-Toe game where:
 
@@ -142,7 +174,7 @@ Build a two-player Tic-Tac-Toe game where:
 4. A function checks for a win condition after every move.
 
 **Examples:**
-```plaintext
+```
 Initial board:
  1 | 2 | 3
 ---+---+---
@@ -193,18 +225,20 @@ Game Result: Player 1 Wins!
 ```
 
 ---
-## Problem 6: Exponential Backoff
+
+## Problem 7: Exponential Backoff
 
 You are implementing an [exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff) mechanism commonly used in networking and distributed systems for retrying operations. The goal is to retry an operation multiple times with an exponentially increasing delay between attempts. If all retries fail, return a failure message.
 
 Write a function `exponential_backoff` that takes the following parameters:
+
 - `operation`: A callable function that performs the operation and may raise an exception on failure.
 - `max_retries`: An integer representing the maximum number of retry attempts.
 
 The function should:
 
 1. Retry the `operation` up to `max_retries` times if it fails.
-2. Use an exponential backoff delay: \(2^{i-1}\) seconds for the \(i^{th}\) retry (e.g., 1 second for the first retry, 2 seconds for the second retry, etc.).
+2. Use an exponential backoff delay: $2^{i-1}$ seconds for the $i^{th}$ retry (e.g., 1 second for the first retry, 2 seconds for the second retry, etc.).
 3. Return the result of the `operation` if it succeeds within the allowed retries.
 4. If all retries fail, raise an exception indicating that the operation failed after all attempts.
 
@@ -221,8 +255,10 @@ def unreliable_operation():
 
 print(exponential_backoff(unreliable_operation, max_retries=5))
 ```
+
 Output (sample):
-```plaintext
+
+```
 Attempt 1 failed. Retrying in 1 seconds...
 Attempt 2 failed. Retrying in 2 seconds...
 Attempt 3 succeeded: Success
@@ -236,8 +272,10 @@ def always_failing_operation():
 
 print(exponential_backoff(always_failing_operation, max_retries=3))
 ```
+
 Output:
-```plaintext
+
+```
 Attempt 1 failed. Retrying in 1 seconds...
 Attempt 2 failed. Retrying in 2 seconds...
 Attempt 3 failed. Operation failed after 3 attempts.
@@ -250,4 +288,5 @@ Attempt 3 failed. Operation failed after 3 attempts.
 - Compute the delay as \(2^{i-1}\) seconds for the \(i^{th}\) attempt.
 
 ---
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T416OJAV)

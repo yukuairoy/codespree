@@ -21,62 +21,152 @@ Write a program that counts the number of vowels in a given word. Vowels are `a`
 
 **Examples**
 
-```plaintext
+```
 Input: "hello"
 Output: 2
 
-Input: "education"
+Input: "EducaTiOn"
 Output: 5
 
-Input: "rhythm"
+Input: "rhytHm"
 Output: 0
 
-Input: "aquarium"
-Output: 4
+Input: "aQuAriUm"
+Output: 5
+
+Input: "PYTHON"
+Output: 1
+
+Input: "cOmpUtEr"
+Output: 3
+
+Input: "12345abc"
+Output: 1
+
+Input: ""
+Output: 0
+
+Input: "aeiouAEIOU"
+Output: 10
+
+Input: "sTrAwbErrY"
+Output: 2
 ```
 
 ---
 
 ## Problem 2: Reverse a List
 
-Write a function to reverse a list.
+Write a function to reverse a list of numbers.
 
 **Examples:**  
-```plaintext
+```
 Input: [1, 2, 3, 4, 5]
 Output: [5, 4, 3, 2, 1]
 
 Input: [10, 20, 30]
 Output: [30, 20, 10]
+
+Input: []
+Output: []
+
+Input: [7]
+Output: [7]
+
+Input: [1, 1, 1, 1]
+Output: [1, 1, 1, 1]
+
+Input: [-1, -2, -3, -4]
+Output: [-4, -3, -2, -1]
+
+Input: [0, 100, 200]
+Output: [200, 100, 0]
+
+Input: [3, 5, 2, 9]
+Output: [9, 2, 5, 3]
+
+Input: [42]
+Output: [42]
+
+Input: [8, 6, 7, 5, 3, 0, 9]
+Output: [9, 0, 3, 5, 7, 6, 8]
 ```
 
 ---
 
-## Problem 3: Perfect Square
+## Problem 3: String Reversal
 
-Check if a number is a [perfect square](https://en.wikipedia.org/wiki/Square_number). A perfect square is an integer that is the square of another integer.
+Write a function to reverse a string.
+
+**Example:**  
+```
+Input: "hello"
+Output: "olleh"
+
+Input: ""
+Output: ""
+
+Input: "madam"
+Output: "madam"
+
+Input: "hello world!"
+Output: "!dlrow olleh"
+
+Input: "  abc  "
+Output: "  cba  "
+
+Input: "Python"
+Output: "nohtyP"
+```
+
+---
+
+## Problem 4: Perfect Square
+
+Check if a number is a [perfect square](https://en.wikipedia.org/wiki/Square_number). A perfect square is a non-negative integer that is the square of another integer.
 
 **Examples**
 
-```plaintext
-Input: 16
+```
+Input: 25
 Output: True
+Explanation: 25 (5 * 5 = 25)
 
 Input: 18
 Output: False
 
-Input: 1
+Input: 0
+Output: True (0 * 0 = 0)
+
+Input: 4
 Output: True
+
+Input: 15
+Output: False
+
+Input: 16
+Output: True
+
+Input: 101
+Output: False
+
+Input: 10000
+Output: True
+
+Input: -1
+Output: False (A perfect square must be non-negative)
 ```
 
 ---
 
-## Problem 4: Second Largest
+## Problem 5: Second Largest
 
-Find the second largest number in an array.
+Find the second largest number in an array.  
+Assume that the input array contains at least two numbers.
 
 **Examples**
-```plaintext
+
+```
 Input: [10, 5, 8, 12]
 Output: 10
 
@@ -85,16 +175,37 @@ Output: 4
 
 Input: [5, 5, 5, 5]
 Output: 5
+
+Input: [5, 3, 0, 5]
+Output: 5
+
+Input: [1, 2]
+Output: 1
+
+Input: [-1, -2, -3]
+Output: -2
+
+Input: [5, 10, 15, 20, 25]
+Output: 20
+
+Input: [3, 1, 4, 2]
+Output: 3
+
+Input: [0, -1, -2, -3]
+Output: -1
+
+Input: [42, 35, 35, 42, 35, 35]
+Output: 42
 ```
 
 ---
 
-## Problem 5: [Sum of Digits](https://en.wikipedia.org/wiki/Digital_root)
+## Problem 6: [Digital Root](https://en.wikipedia.org/wiki/Digital_root)
 
 Add all digits in a number until you get a single digit.
 
 **Examples**
-```plaintext
+```
 Input: 789
 Output: 6 (7+8+9=24, 2+4=6)
 
@@ -103,39 +214,60 @@ Output: 1 (1+2+3+4=10, 1+0=1)
 
 Input: 5
 Output: 5
+
+Input: 100
+Output: 1
+Explanation: 1 + 0 + 0 = 1.
+
+Input: 456
+Output: 6
+Explanation: 4 + 5 + 6 = 15, 1 + 5 = 6.
+
+Input: 1001
+Output: 2
+Explanation: 1 + 0 + 0 + 1 = 2.
+
+Input: 98765
+Output: 8
+Explanation: 9 + 8 + 7 + 6 + 5 = 35, 3 + 5 = 8.
+
+Input: 123456789
+Output: 9
+Explanation: 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45, 4 + 5 = 9.
+
+Input: 999999999
+Output: 9
+Explanation: 9 repeated 9 times adds up to 81, 8 + 1 = 9.
 ```
 
 ---
 
-## Problem 6: Find the Extra Character
+## Problem 7: Extra Character
 
-Given two strings, `A` and `B`, where `A` has exactly one extra character compared to `B`, find that character.
+Given two strings, `A` and `B`, where `A` is a string that contains all the characters of `B` in the same order, plus exactly one additional character at a random position, find the extra character in `A`.
 
 **Examples:**  
-```plaintext
+```
 Input: A = "atcb42c", B = "atb42c"
 Output: "c"
 
 Input: A = "abcd", B = "abc"
 Output: "d"
-```
 
----
+Input: A = "aabbcc", B = "aabcc"
+Output: "b"
 
-## Problem 7: Array Rotation
+Input: A = "xylophone", B = "xylophne"
+Output: "o"
 
-Rotate an array by `k` positions to the right.
+Input: A = "12345", B = "1234"
+Output: "5"
 
-**Examples:**
-```plaintext
-Input: [1, 2, 3, 4], k = 2
-Output: [3, 4, 1, 2]
+Input: A = "a", B = ""
+Output: "a"
 
-Input: [10, 20, 30, 40, 50], k = 3
-Output: [30, 40, 50, 10, 20]
-
-Input: [1, 2, 3], k = 0
-Output: [1, 2, 3]
+Input: A = "HellO", B = "HelO"
+Output: "l"
 ```
 
 ---
@@ -145,66 +277,150 @@ Output: [1, 2, 3]
 Print a triangle pattern of numbers where each row contains increasing numbers starting from 1.
 
 **Examples:**
-```plaintext
-Input: n=3
+```
+Input: 1
+Output:
+1
+
+Input: 3
 Output:
 1
 1 2
 1 2 3
 
-Input: n=5
+Input: 5
 Output:
 1
 1 2
 1 2 3
 1 2 3 4
 1 2 3 4 5
+
+Input: 7
+Output:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5 6 7
 ```
 
 ---
 
-## Problem 9: Email Validator
+## Problem 9: Longest Common Prefix
 
-Write a program that validates an email address based on the following rules:
+Write a function to find the longest prefix shared by all strings in an array. A **prefix** is the beginning part of a string. For example, the prefixes of "car" are "c", "ca", and "car".
 
-1. Contains exactly one `@`.
-2. The part before `@` contains only valid characters (letters, numbers, underscores, or dots).
-3. The part after `@` is a valid domain (letters and periods).
-4. The email contains no spaces.
+If no common prefix exists, return an empty string "".
+
+**Examples**:
+
+```
+Input: ["beaux", "beauty", "beat", "beam"]
+Output: "bea"
+
+Input: ["apple", "ape", "april"]
+Output: "ap"
+
+Input: ["test", "testing", "tester"]
+Output: "test"
+
+Input: ["hello", "world", "python"]
+Output: ""
+
+Input: ["short", "longer", "different"]
+Output: ""
+
+Input: ["prefix", "preference", ""]
+Output: ""
+
+Input: ["test", "test", "test"]
+Output: "test"
+
+Input: []
+Output: ""
+
+Input: ["fun"]
+Output: "fun"
+```
+
+---
+
+## Problem 10: Split Array with Two Sets
+
+Given an integer array, the task is to determine whether it can be split into two parts such that each part contains only distinct elements.
+
+**Examples:**  
+```
+Input: [10, 10, 20, 20, 30, 40]
+Output: True
+Explanation: One possible split into [10, 20, 30] and [10, 20, 40]. Both parts have distinct elements.
+
+Input: [1, 1, 1, 1]
+Output: False
+
+Input: [1, 2, 3, 4, 5, 6]
+Output: True
+Explanation: One possible split is [1, 2, 3] and [4, 5, 6].
+
+Input: [1, 1, 1, 2, 2, 2]
+Output: False
+Explanation: No way to split into two parts with distinct elements in each.
+
+Input: [1]
+Output: True
+Explanation: The array can be split into [1] and an empty set.
+
+Input: []
+Output: True
+Explanation: An empty array trivially satisfies the condition.
+
+Input: [6, 6]
+Output: True
+Explanation: The array can be split as [6] and [6].
+
+Input: [3, 4, 3, 4]
+Output: True
+Explanation: The array can be split as [3, 4] and [3, 4].
+```
+
+---
+
+## Problem 11: Reverse Words
+
+Given a sentence, reverse the order of words.
+
+**Examples**
+
+```
+Input: "The quick brown fox"
+Output: "fox brown quick The"
+
+Input: "Hello world!"
+Output: "world! Hello"
+```
+
+---
+
+## Problem 12: Find the Missing Number
+
+Given an array containing `n` distinct numbers taken from the range `[0, n]`, find the missing number.
 
 **Examples:**
+
 ```plaintext
-Input: "test.email@domain.com"
-Output: Valid
+Input: [3, 0, 1]
+Output: 2
 
-Input: "invalid@@domain.com"
-Output: Invalid
-
-Input: "user name@domain.com"
-Output: Invalid
+Input: [2, 3, 1, 4, 5]
+Output: 0
 ```
 
 ---
 
-## Problem 10: Phone Number Formatter
-
-Write a program that formats a 10-digit phone number into the format `(XXX) XXX-XXXX`.
-
-**Examples**  
-```plaintext
-Input: "1234567890"
-Output: "(123) 456-7890"
-
-Input: "9876543210"
-Output: "(987) 654-3210"
-
-Input: "(123)-456-7890"
-Output: "(123) 456-7890"
-```
-
----
-
-## Problem 11: Rearrange Vowels in a String
+## Problem 13: Rearrange Vowels
 
 Write a function to rearrange the vowels in a string in alphabetical order, placing uppercase vowels before lowercase vowels. Keep all consonants in their original positions.
 
@@ -222,9 +438,10 @@ Output: "alphabet"
 
 ---
 
-## Problem 12: First Non-Repeating Character
+## Problem 14: First Unique Character
 
-Given a string, find the index of the first non-repeating character. Return `-1` if no such character exists.
+Given a string, find the index of the first unique character.  
+Return `-1` if no such character exists.
 
 **Examples:**  
 ```plaintext
@@ -237,12 +454,39 @@ Output: 0
 
 ---
 
-## Problem 13: K-th Fibonacci Number
+## Problem 15: Reverse Digits of a Number
+
+Write a function to reverse the digits of an integer.
+
+**Examples:**  
+```plaintext
+Input: 12345
+Output: 54321
+
+Input: -123
+Output: -321
+```
+
+---
+
+## Problem 16: K-th Fibonacci Number
 
 Find the `k-th` [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
 
 **Examples:**  
 ```plaintext
+Input: k = 1
+Output: 1
+
+Input: k = 2
+Output: 1
+
+Input: k = 3
+Output: 2
+
+Input: k = 4
+Output: 3
+
 Input: k = 5
 Output: 5
 
@@ -252,7 +496,7 @@ Output: 55
 
 ---
 
-## Problem 14: Add Two Numbers Represented as Strings
+## Problem 17: Add Two Numbers Represented as Strings
 
 Write a function to add two numbers represented as strings. Return the sum as a string.
 
@@ -267,7 +511,7 @@ Output: "1000"
 
 ---
 
-## Problem 15: Product of Array Except Self
+## Problem 18: Product of Array Except Self
 
 Given an array of integers, return a new array such that each element at index `i` is the product of all numbers in the original array except the one at `i`.
 
@@ -282,7 +526,7 @@ Output: [2, 3, 6]
 
 ---
 
-## Problem 16: Largest Sum of Non-Adjacent Numbers
+## Problem 19: Largest Sum of Non-Adjacent Numbers
 
 Given a list of integers, write a function that returns the largest sum of two non-adjacent numbers.
 
@@ -297,7 +541,7 @@ Output: 10 (5+5)
 
 ---
 
-## Problem 17: Implement [Power Function](https://en.wikipedia.org/wiki/Exponentiation)
+## Problem 20: [Power Function](https://en.wikipedia.org/wiki/Exponentiation)
 
 Implement the function `pow(x, y)` to compute \(x^y\).
 
@@ -312,7 +556,7 @@ Output: 0.04
 
 ---
 
-## Problem 18: [Combinations](https://en.wikipedia.org/wiki/Combination)
+## Problem 21: [Combinations](https://en.wikipedia.org/wiki/Combination)
 
 Write a function to compute the number of ways to choose `k` items from `n` items (combinations), denoted as \(C(n, k)\).
 
@@ -327,22 +571,7 @@ Output: 20
 
 ---
 
-## Problem 19: Count Unique Characters in a String
-
-Write a function that counts the number of unique characters in a string.
-
-**Examples:**
-```plaintext
-Input: "programming"
-Output: 8
-
-Input: "hello"
-Output: 4
-```
-
----
-
-## Problem 20: Check for [Palindrome](https://en.wikipedia.org/wiki/Palindrome)
+## Problem 22: Check for [Palindrome](https://en.wikipedia.org/wiki/Palindrome)
 
 Write a function to check if a given string is a palindrome.
 
@@ -357,7 +586,7 @@ Output: False
 
 ---
 
-## Problem 21: Check if Two Strings are [Anagrams](https://en.wikipedia.org/wiki/Anagram)
+## Problem 23: Check if Two Strings are [Anagrams](https://en.wikipedia.org/wiki/Anagram)
 
 Write a function to check if two strings are anagrams of each other.
 
@@ -372,7 +601,7 @@ Output: False
 
 ---
 
-## Problem 22: Check If a Number is [Prime](https://en.wikipedia.org/wiki/Prime_number)
+## Problem 24: Check If a Number is [Prime](https://en.wikipedia.org/wiki/Prime_number)
 
 Write a function to determine if a given number is prime.
 
@@ -388,74 +617,60 @@ Output: False
 
 ---
 
-## Problem 23: Find the Missing Number
+## Problem 25: Phone Number Formatter
 
-Given an array containing `n` distinct numbers taken from the range `[0, n]`, find the missing number.
+Write a program that formats a 10-digit phone number into the format `(XXX) XXX-XXXX`.
+
+**Examples**  
+```plaintext
+Input: "1234567890"
+Output: "(123) 456-7890"
+
+Input: "9876543210"
+Output: "(987) 654-3210"
+```
+
+---
+
+## Problem 26: Array Rotation
+
+Rotate an array by `k` positions to the right.
 
 **Examples:**
-
 ```plaintext
-Input: [3, 0, 1]
-Output: 2
+Input: [1, 2, 3, 4], k = 2
+Output: [3, 4, 1, 2]
 
-Input: [2, 3, 1, 4, 5]
-Output: 0
+Input: [10, 20, 30, 40, 50], k = 3
+Output: [30, 40, 50, 10, 20]
+
+Input: [1, 2, 3], k = 0
+Output: [1, 2, 3]
+
+Input: [1, 2, 3], k = 3
+Output: [1, 2, 3]
+
+Input: [10, 20, 30, 40, 50], k = 1
+Output: [50, 10, 20, 30, 40]
+
+Input: [], k = 3
+Output: []
+
+Input: [7, 8, 9], k = 10
+Output: [9, 7, 8]
 ```
 
 ---
 
-## Problem 24: String Reversal
-
-Write a function to reverse a string.
-
-**Example:**  
-```plaintext
-Input: "hello"
-Output: "olleh"
-```
-
----
-
-## Problem 25: Reverse Words
-
-Given a sentence, reverse the order of words.
-
-**Examples**
-
-```plaintext
-Input: "The quick brown fox"
-Output: "fox brown quick The"
-
-Input: "Hello world!"
-Output: "world! Hello"
-```
-
----
-
-## Problem 26: Convert a List to a Single String
+## Problem 27: Convert a List to a Single String
 
 Write a function that takes a list of strings and concatenates them into a single string, separated by commas.
 
 **Example:**  
 
-```plaintext
+```
 Input: ["apple", "banana", "cherry"]
 Output: "apple,banana,cherry"
-```
-
----
-
-## Problem 27: Convert Temperature
-
-Write a function to [convert temperature between Celsius and Fahrenheit](https://en.wikipedia.org/wiki/Fahrenheit#Conversion_(specific_temperature_point)).
-
-**Examples:**  
-```plaintext
-Input: temp = 100, scale = "C"  # Convert from Celsius to Fahrenheit
-Output: 212
-
-Input: temp = 32, scale = "F"  # Convert from Fahrenheit to Celsius
-Output: 0
 ```
 
 ---
@@ -648,17 +863,17 @@ Output: True
 
 ---
 
-## Problem 39: Reverse Digits of a Number
+## Problem 39: Count Unique Characters in a String
 
-Write a function to reverse the digits of an integer.
+Write a function that counts the number of unique characters in a string.
 
-**Examples:**  
+**Examples:**
 ```plaintext
-Input: 12345
-Output: 54321
+Input: "programming"
+Output: 8
 
-Input: -123
-Output: -321
+Input: "hello"
+Output: 4
 ```
 
 ---
@@ -795,16 +1010,15 @@ Given two positive integers `a` and `b`, return the number of common factors of 
 An integer `x` is a common factor of `a` and `b` if `x` divides both `a` and `b`.
 
 **Examples:**
+
 ```plaintext
 Input: a = 12, b = 6
 Output: 4
-Explanation:  
-The common factors of 12 and 6 are 1, 2, 3, 6.
+Explanation: The common factors of 12 and 6 are 1, 2, 3, 6.
 
 Input: a = 25, b = 30
 Output: 2
-Explanation:  
-The common factors of 25 and 30 are 1, 5.
+Explanation: The common factors of 25 and 30 are 1, 5.
 ```
 
 ---
