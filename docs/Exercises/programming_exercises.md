@@ -11,7 +11,7 @@ This document features simple programming exercises to sharpen your skills in fo
 * Preparing for coding interviews as a stepping stone to platforms like [LeetCode](https://leetcode.com/) or [HackerRank](https://www.hackerrank.com/).
 * Building confidence with approachable problems before tackling advanced ones.
 * Improving problem-solving, debugging, and optimization skills.
-* Practicing unit testing, a crucial skill for professional development.
+* Practicing unit testing, a crucial skill for software engineering.
 
 ---
 
@@ -19,8 +19,7 @@ This document features simple programming exercises to sharpen your skills in fo
 
 Write a program that counts the number of vowels in a given word. Vowels are `a`, `e`, `i`, `o`, `u` (case-insensitive).
 
-**Examples**
-
+**Examples:**
 ```
 Input: "hello"
 Output: 2
@@ -98,7 +97,7 @@ Output: [9, 0, 3, 5, 7, 6, 8]
 
 Write a function to reverse a string.
 
-**Example:**  
+**Examples:**  
 ```
 Input: "hello"
 Output: "olleh"
@@ -125,8 +124,7 @@ Output: "nohtyP"
 
 Check if a number is a [perfect square](https://en.wikipedia.org/wiki/Square_number). A perfect square is a non-negative integer that is the square of another integer.
 
-**Examples**
-
+**Examples:**
 ```
 Input: 25
 Output: True
@@ -164,8 +162,7 @@ Output: False (A perfect square must be non-negative)
 Find the second largest number in an array.  
 Assume that the input array contains at least two numbers.
 
-**Examples**
-
+**Examples:**
 ```
 Input: [10, 5, 8, 12]
 Output: 10
@@ -204,7 +201,7 @@ Output: 42
 
 Add all digits in a number until you get a single digit.
 
-**Examples**
+**Examples:**
 ```
 Input: 789
 Output: 6 (7+8+9=24, 2+4=6)
@@ -315,8 +312,7 @@ Write a function to find the longest prefix shared by all strings in an array. A
 
 If no common prefix exists, return an empty string "".
 
-**Examples**:
-
+**Examples:**:
 ```
 Input: ["beaux", "beauty", "beat", "beam"]
 Output: "bea"
@@ -356,7 +352,8 @@ Given an integer array, the task is to determine whether it can be split into tw
 ```
 Input: [10, 10, 20, 20, 30, 40]
 Output: True
-Explanation: One possible split into [10, 20, 30] and [10, 20, 40]. Both parts have distinct elements.
+Explanation: One possible split into [10, 20, 30] and [10, 20, 40].
+Both parts have distinct elements.
 
 Input: [1, 1, 1, 1]
 Output: False
@@ -390,16 +387,21 @@ Explanation: The array can be split as [3, 4] and [3, 4].
 
 ## Problem 11: Reverse Words
 
-Given a sentence, reverse the order of words.
+Given a sentence, reverse the order of words. Trim leading and trailing spaces, and reduce multiple spaces to a single space between words.
 
-**Examples**
-
+**Examples:**
 ```
 Input: "The quick brown fox"
 Output: "fox brown quick The"
 
 Input: "Hello world!"
 Output: "world! Hello"
+
+Input: "  Python   is   fun  "
+Output: "fun is Python"
+
+Input: "Single"
+Output: "Single"
 ```
 
 ---
@@ -409,8 +411,7 @@ Output: "world! Hello"
 Given an array containing `n` distinct numbers taken from the range `[0, n]`, find the missing number.
 
 **Examples:**
-
-```plaintext
+```
 Input: [3, 0, 1]
 Output: 2
 
@@ -425,7 +426,7 @@ Output: 0
 Write a function to rearrange the vowels in a string in alphabetical order, placing uppercase vowels before lowercase vowels. Keep all consonants in their original positions.
 
 **Examples:**
-```plaintext
+```
 Input: s = "coding"
 Output: "cidong"
 
@@ -444,7 +445,7 @@ Given a string, find the index of the first unique character.
 Return `-1` if no such character exists.
 
 **Examples:**  
-```plaintext
+```
 Input: "lastlasp"
 Output: 3
 
@@ -459,7 +460,7 @@ Output: 0
 Write a function to reverse the digits of an integer.
 
 **Examples:**  
-```plaintext
+```
 Input: 12345
 Output: 54321
 
@@ -471,10 +472,10 @@ Output: -321
 
 ## Problem 16: K-th Fibonacci Number
 
-Find the `k-th` [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
+Find the `k`-th [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
 
 **Examples:**  
-```plaintext
+```
 Input: k = 1
 Output: 1
 
@@ -501,7 +502,7 @@ Output: 55
 Write a function to add two numbers represented as strings. Return the sum as a string.
 
 **Examples:**  
-```plaintext
+```
 Input: num1 = "123", num2 = "456"
 Output: "579"
 
@@ -511,17 +512,17 @@ Output: "1000"
 
 ---
 
-## Problem 18: Product of Array Except Self
+## Problem 18: Sum of Array Except Self
 
-Given an array of integers, return a new array such that each element at index `i` is the product of all numbers in the original array except the one at `i`.
+Given an array of integers, return a new array such that each element at index `i` is the sum of all numbers in the original array except the one at `i`.
 
 **Examples:**  
-```plaintext
+```
 Input: [1, 2, 3, 4, 5]
-Output:  [120, 60, 40, 30, 24]
+Output: [14, 13, 12, 11, 10]
 
 Input: [3, 2, 1]
-Output: [2, 3, 6]
+Output: [3, 4, 5]
 ```
 
 ---
@@ -531,7 +532,7 @@ Output: [2, 3, 6]
 Given a list of integers, write a function that returns the largest sum of two non-adjacent numbers.
 
 **Examples:**  
-```plaintext
+```
 Input: [2, 4, 6, 8]
 Output: 12 (4+8)
 
@@ -543,10 +544,10 @@ Output: 10 (5+5)
 
 ## Problem 20: [Power Function](https://en.wikipedia.org/wiki/Exponentiation)
 
-Implement the function `pow(x, y)` to compute \(x^y\).
+Implement the function `pow(x, y)` to compute $x^y$.
 
 **Examples:**  
-```plaintext
+```
 Input: x = 2, y = 3
 Output: 8
 
@@ -558,10 +559,10 @@ Output: 0.04
 
 ## Problem 21: [Combinations](https://en.wikipedia.org/wiki/Combination)
 
-Write a function to compute the number of ways to choose `k` items from `n` items (combinations), denoted as \(C(n, k)\).
+Write a function to compute the number of ways to choose `k` items from `n` items (combinations), denoted as $C(n, k)$.
 
 **Examples:**  
-```plaintext
+```
 Input: n = 5, k = 2
 Output: 10
 
@@ -576,7 +577,7 @@ Output: 20
 Write a function to check if a given string is a palindrome.
 
 **Examples:**
-```plaintext
+```
 Input:  "madam"
 Output: True
 
@@ -591,7 +592,7 @@ Output: False
 Write a function to check if two strings are anagrams of each other.
 
 **Examples:**  
-```plaintext
+```
 Input: "listen", "silent"
 Output: True
 
@@ -606,8 +607,7 @@ Output: False
 Write a function to determine if a given number is prime.
 
 **Examples:**  
-
-```plaintext
+```
 Input: 13
 Output: True
 
@@ -621,8 +621,8 @@ Output: False
 
 Write a program that formats a 10-digit phone number into the format `(XXX) XXX-XXXX`.
 
-**Examples**  
-```plaintext
+**Examples:**
+```
 Input: "1234567890"
 Output: "(123) 456-7890"
 
@@ -637,7 +637,7 @@ Output: "(987) 654-3210"
 Rotate an array by `k` positions to the right.
 
 **Examples:**
-```plaintext
+```
 Input: [1, 2, 3, 4], k = 2
 Output: [3, 4, 1, 2]
 
@@ -662,15 +662,19 @@ Output: [9, 7, 8]
 
 ---
 
-## Problem 27: Convert a List to a Single String
+## Problem 27: FizzBuzz String
 
-Write a function that takes a list of strings and concatenates them into a single string, separated by commas.
+Write a function `fizzbuzz_string(n)` that returns a single string containing the FizzBuzz sequence from 1 to `n`, separated by commas.
+
+* For multiples of 3, use "Fizz".
+* For multiples of 5, use "Buzz".
+* For multiples of both 3 and 5, use "FizzBuzz".
+* Otherwise, just use the number itself.
 
 **Example:**  
-
 ```
-Input: ["apple", "banana", "cherry"]
-Output: "apple,banana,cherry"
+Input: 15
+Output: "1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz"
 ```
 
 ---
@@ -679,8 +683,8 @@ Output: "apple,banana,cherry"
 
 Print a diamond pattern using asterisks (`*`).
 
-**Examples**  
-```plaintext
+**Examples:**
+```
 Input: 3
 Output:
   *
@@ -706,39 +710,52 @@ Output:
 
 ## Problem 29: Check if a String is a [Pangram](https://en.wikipedia.org/wiki/Pangram)
 
-Write a function to check if a given string is a pangram (contains every letter of the alphabet at least once).
+A **pangram** is a sentence that contains every letter of the English alphabet at least once.  
+Write a function to determine whether a given string is a pangram. The check should be case-insensitive.
 
-**Example:**  
- 
-```plaintext
+**Examples:**
+```
 Input: "The quick brown fox jumps over the lazy dog"
 Output: True
+
+Input: "Pack my box with five dozen liquor jugs 1234!!!"
+Output: True
+Explanation: Numbers and punctuation are ignored, and all letters are present at least once.
+
+Input: "The quick brown fox jumps over the la dog"
+Output: False
 ```
 
 ---
 
-## Problem 30: Count Words in a String
+## Problem 30: Largest Alphabetical Rotation
 
-Write a program to count the number of words in a given string.
+Given a string `s`, generate all rotations (cyclic shifts) of `s` and return the **lexicographically largest** rotation.
 
-**Example:**  
- 
-```plaintext
-Input: "This is a test string."
-Output: 5
+**Examples:**
+```
+Input: "abc"
+Rotations: "abc", "bca", "cab"
+Output: "cab"
+
+Input: "zab"
+Rotations: "zab", "abz", "bza"
+Output: "zab"  # since "zab" is lexicographically largest among "zab", "abz", "bza"
 ```
 
 ---
 
-## Problem 31: Calculate [Factorial](https://en.wikipedia.org/wiki/Factorial)
+## Problem 31: Date String Formatter
 
-Write a function to calculate the factorial of a given number using recursion.
+Write a function `reformat_date(date_str)` that takes a string in the format `YYYY-MM-DD` and returns a string in the format `MonthName DD, YYYY`, where `MonthName` is the full English month (e.g., "January", "February", …).
 
-**Example:**
+**Examples:**
+```
+Input: "2023-01-15"
+Output: "January 15, 2023"
 
-```plaintext
-Input: 5
-Output: 120
+Input: "1999-12-31"
+Output: "December 31, 1999"
 ```
 
 ---
@@ -749,7 +766,7 @@ Write a function that computes the double factorial of a given non-negative inte
 The double factorial of `n`, denoted as `n!!`, is defined as the product of all integers from 1 to `n` that have the same parity (odd or even) as `n`.  
 
 **Examples:**
-```plaintext
+```
 Input: n = 8
 Output: 384
 Explanation: 8!! = 8 * 6 * 4 * 2 = 384
@@ -761,20 +778,19 @@ Explanation: 7!! = 7 * 5 * 3 * 1 = 105
 
 ---
 
-## Problem 33: Title Case
+## Problem 33: Partition String into Fixed-Size Groups
 
-Convert a sentence to [title case](https://en.wikipedia.org/wiki/Title_case) where each word starts with a capital letter, and the rest of the letters in the word are lowercase.
+Given a string `s`, an integer `k`, and a fill character `fill`, partition `s` into groups of size `k`. If the length of `s` is not a multiple of `k`, pad the final group with the fill character until it has size `k`. Return all the groups as a list of strings.
 
-**Examples**
-```plaintext
-Input: "hello world"
-Output: "Hello World"
+**Examples:**
+```
+Input: s = "hello", k = 2, fill = "*" 
+Output: ["he", "ll", "o*"]
+Explanation: The remainder has only 'o', so we add one '*' to form a group of size 2.
 
-Input: "this is a TEST"
-Output: "This Is A Test"
-
-Input: "programming is fun"
-Output: "Programming Is Fun"
+Input: s = "abcd123", k = 3, fill = "-"
+Output: ["abc", "d12", "3--"]
+Explanation: String length is 7, so we need 2 fill characters '-' to complete the last group.
 ```
 
 ---
@@ -784,38 +800,31 @@ Output: "Programming Is Fun"
 Write a function to check if a number is a perfect number. A perfect number is a positive integer equal to the sum of its proper divisors (excluding itself).
 
 **Example:**
-```plaintext
+```
 Input: 6
 Output: True
 ```
 
 ---
 
-## Problem 35: Prime Factors of a Number
+## Problem 35: Pattern Matching
 
-Write a function to count the number of prime factors of a given positive integer. A prime factor is a prime number that divides the given number exactly.
+You have a string `s` and a pattern `p` containing exactly one `'*'`. The `'*'` can match any sequence of zero or more characters. Determine whether it is possible to replace the `'*'` in `p` with some (possibly empty) string such that the resulting string becomes a substring of `s`. Return true if such a match exists, otherwise false.
 
-**Example:**  
-```plaintext
-Input: 60
-Output: 3
-Explanation: The prime factors of 60 are 2, 3, and 5.
+**Examples:**
+```
+Input: s = "abanana", p = "b*na"
+Output: true
+Explanation: '*' can match "ana", giving "banana" which is a substring of "abanana".
 
-Input: 100
-Output: 2
-Explanation: The prime factors of 100 are 2 and 5.
+Input: s = "aaaa", p = "b*a"
+Output: false
+Explanation: There is no substring in "aaaa" that starts with 'b'. Hence, no match.
 
-Input: 37
-Output: 1
-Explanation: The prime factor of 37 is 37 itself (it's a prime number).
-
-Input: 1
-Output: 0
-Explanation: 1 has no prime factors.
-
-Input: 84
-Output: 3
-Explanation: The prime factors of 84 are 2, 3, and 7.
+Input: s = "luck", p = "u*"
+Output: true
+Explanation: Possible replacements for '*' ("", "c", "ck") lead to substrings "u", "uc",
+or "uck" in "luck".
 ```
 
 ---
@@ -824,8 +833,8 @@ Explanation: The prime factors of 84 are 2, 3, and 7.
 
 Write a function to check if one permutation of a string is a derangement of another. A derangement means no character appears in its original position.
 
-**Examples:**  
-```plaintext
+**Examples:**
+```
 Input: s1 = "abc", s2 = "cab"
 Output: True
 
@@ -839,10 +848,10 @@ Output: False
 
 Write a function to check if a number is a narcissistic number. A number is narcissistic if the sum of its digits raised to the power of the number of digits equals the number itself.
 
-**Example:**  
-```plaintext
+**Example:**
+```
 Input: 153
-Output: True
+Output: True (1^3+5^3+3^3=153)
 ```
 
 ---
@@ -851,14 +860,65 @@ Output: True
 
 Write a function to validate if a given 9x9 Sudoku board is valid.
 
-**Example:**
-```plaintext
-Input: [
- [5, 3, ".", ".", 7, ".", ".", ".", "."],
- [6, ".", ".", 1, 9, 5, ".", ".", "."],
- ...
+**Examples:**
+```
+Input:
+[
+ ["5", "3", ".", ".", "7", ".", ".", ".", "."],
+ ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+ [".", "9", "8", ".", ".", ".", ".", "6", "."],
+ ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+ ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+ ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+ [".", "6", ".", ".", ".", ".", "2", "8", "."],
+ [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+ [".", ".", ".", ".", "8", ".", ".", "7", "9"]
 ]
 Output: True
+
+Input:
+[
+ ["5", "3", ".", ".", "7", ".", ".", ".", "."],
+ ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+ [".", "9", "8", ".", ".", ".", ".", "6", "."],
+ ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+ ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+ ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+ [".", "6", ".", ".", ".", ".", "2", "8", "."],
+ [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+ [".", ".", "9", ".", "8", ".", ".", "7", "9"] 
+]
+Output: False
+Explanation: The last row has two '9's (positions [8][2] and [8][8]).
+
+Input:
+[
+ [".", ".", "4", ".", ".", ".", ".", ".", "."],
+ [".", ".", ".", ".", ".", ".", "5", ".", "."],
+ [".", ".", ".", ".", "7", ".", ".", "2", "."],
+ [".", ".", ".", "8", ".", ".", ".", ".", "9"],
+ [".", ".", ".", ".", ".", "1", ".", ".", "."],
+ [".", ".", ".", ".", ".", ".", ".", ".", "."],
+ [".", "9", ".", ".", ".", ".", ".", "1", "."],
+ [".", ".", ".", ".", ".", ".", ".", ".", "."],
+ [".", ".", ".", "8", ".", ".", ".", ".", "."]
+]
+Output: False
+Explanation: There's an '8' in row 3 (0-indexed) and row 8 (0-indexed), both in the same column.
+
+Input:
+[
+ [".", ".", ".", ".", ".", "5", ".", ".", "."],
+ [".", ".", "3", "1", ".", ".", ".", ".", "."],
+ [".", ".", "8", ".", ".", ".", ".", "6", "."],
+ ["5", ".", ".", ".", "6", ".", ".", ".", "3"],
+ ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+ ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+ [".", "6", ".", ".", ".", ".", "2", "8", "."],
+ [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+ [".", ".", ".", ".", "8", ".", ".", "7", "3"]
+]
+Output: False
 ```
 
 ---
@@ -868,7 +928,7 @@ Output: True
 Write a function that counts the number of unique characters in a string.
 
 **Examples:**
-```plaintext
+```
 Input: "programming"
 Output: 8
 
@@ -883,7 +943,7 @@ Output: 4
 Write a function to count all integer lattice points `(x, y)` inside or on the boundary of a circle of radius `r`.
 
 **Example:**
-```plaintext
+```
 Input:  r = 2
 Output: 13
 ```
@@ -895,7 +955,7 @@ Output: 13
 Write a function to compress a string using run-length encoding.
 
 **Example:**
-```plaintext
+```
 Input: "aaabbc"
 Output: "a3b2c1"
 ```
@@ -907,12 +967,12 @@ Output: "a3b2c1"
 Given an array of length `n`, find the majority element. The majority element is the element that appears more than `⌊n/2⌋` times.  
 Assume the array always has a majority element.
 
-**Examples:**  
-```plaintext
-Input:  [3, 2, 3]
+**Examples:**
+```
+Input: [3, 2, 3]
 Output: 3
 
-Input:  [4, 8, 10, 8, 8, 8, 4]
+Input: [4, 8, 10, 8, 8, 8, 4]
 Output: 8
 ```
 
@@ -930,7 +990,7 @@ Write a function that validates if a password meets all the following rules:
 - No white-space allowed
 
 **Examples:**
-```plaintext
+```
 Input: "Pass123!"
 Output: True
 
@@ -949,17 +1009,31 @@ Output: False (contains space)
 
 ---
 
-## Problem 44: Longest Word in a Sentence
+## Problem 44: Prime Factors of a Number
 
-Write a function that takes a sentence as input and returns the longest word. If there are multiple words of the same length, return the first one.
+Write a function to count the number of prime factors of a given positive integer. A prime factor is a prime number that divides the given number exactly.
 
-**Examples**
-```plaintext
-Input: "The quick brown fox jumps over the lazy dog"
-Output: "quick"
+**Examples:**
+```
+Input: 60
+Output: 3
+Explanation: The prime factors of 60 are 2, 3, and 5.
 
-Input: "I am learning programming"
-Output: "programming"
+Input: 100
+Output: 2
+Explanation: The prime factors of 100 are 2 and 5.
+
+Input: 37
+Output: 1
+Explanation: The prime factor of 37 is 37 itself.
+
+Input: 1
+Output: 0
+Explanation: 1 has no prime factors.
+
+Input: 84
+Output: 3
+Explanation: The prime factors of 84 are 2, 3, and 7.
 ```
 
 ---
@@ -970,8 +1044,7 @@ Implement a function `count_pairs(n, limit)` to determine the number of valid `(
 Assume that `n >= 0`.
 
 **Examples:**
-
-```plaintext
+```
 Input: n = 5, limit = 3
 Output: 2
 Explanation: (2, 3), (3, 2)
@@ -988,18 +1061,15 @@ Explanation: (2, 5), (3, 4), (4, 3), (5, 2)
 
 Given a positive integer `n`, return the smallest positive integer that is a multiple of both `2` and `n`.
 
-**Examples**
-
-```plaintext
+**Examples:**
+```
 Input: n = 5
 Output: 10
-Explanation:  
-The smallest multiple of both 5 and 2 is 10.
+Explanation: The smallest multiple of both 5 and 2 is 10.
 
 Input: n = 12
 Output: 12
-Explanation:  
-The smallest multiple of both 12 and 2 is 12.
+Explanation: The smallest multiple of both 12 and 2 is 12.
 ```
 
 ---
@@ -1010,8 +1080,7 @@ Given two positive integers `a` and `b`, return the number of common factors of 
 An integer `x` is a common factor of `a` and `b` if `x` divides both `a` and `b`.
 
 **Examples:**
-
-```plaintext
+```
 Input: a = 12, b = 6
 Output: 4
 Explanation: The common factors of 12 and 6 are 1, 2, 3, 6.
@@ -1027,8 +1096,8 @@ Explanation: The common factors of 25 and 30 are 1, 5.
 
 Given an array of integers, determine if the numbers form an arithmetic progression (a sequence where the difference between consecutive terms is constant).
 
-**Examples**
-```plaintext
+**Examples:**
+```
 Input: [3, 7, 11, 15]
 Output: True
 Explanation: The difference between consecutive terms is 4.
@@ -1043,8 +1112,8 @@ Output: False
 
 Given a positive integer, determine which digit occurs most frequently. If there is a tie, return the smallest digit.
 
-**Examples**
-```plaintext
+**Examples:**
+```
 Input: 112233
 Output:  1
 Explanation: Digits 1, 2, and 3 occur twice, so the smallest digit (1) is returned.
@@ -1060,7 +1129,7 @@ Output: 1
 Write a function to generate the first `n` terms of a geometric progression, given the first term `a` and common ratio `r`.
 
 **Examples:**
-```plaintext
+```
 Input: a = 3, r = 2, n = 5
 Output: [3, 6, 12, 24, 48]
 
@@ -1076,14 +1145,16 @@ Write a function to calculate the truncated mean of a list of integers. The trun
 Assume that the size of the input array is at least three.
 
 **Examples:**
-```plaintext
+```
 Input: [2, 3, 4, 5, 6]
 Output: 4
-Explanation: Removing the smallest (2) and largest (6) values leaves [3, 4, 5]. The mean is (3 + 4 + 5) / 3 = 4.
+Explanation: Removing the smallest (2) and largest (6) values leaves [3, 4, 5].
+The mean is (3 + 4 + 5) / 3 = 4.
 
 Input: [1, 2, 3, 2, 3, 1]
 Output: 2
-Explanation: Removing one smallest (1) and one largest (3) value leaves [1, 2, 2, 3]. The mean is (1 + 2 + 2 + 3) / 4 = 2.
+Explanation: Removing one smallest (1) and one largest (3) value leaves [1, 2, 2, 3].
+The mean is (1 + 2 + 2 + 3) / 4 = 2.
 ```
 
 ---
@@ -1094,7 +1165,7 @@ Given two arrays - one containing `names` and another containing corresponding `
 Assume the values of `ages` are distinct.
 
 **Examples:**
-```plaintext
+```
 Input: names = ["Alice", "Bob", "Charlie"], ages = [24, 45, 70]
 Output: ["Charlie", "Bob", "Alice"]
 
@@ -1110,7 +1181,7 @@ Given a positive integer `n`, find the partition integer `x` where the sum of al
 If no such integer exists, return `-1`.
 
 **Examples:**
-```plaintext
+```
 Input: 8
 Output: 6
 Explanation: 1 + 2 + 3 + 4 + 5 + 6 = 6 + 7 + 8
@@ -1135,8 +1206,8 @@ Explanation: No such integer exist
 You are given a string `str`. In one operation, you can swap any two characters at adjacent positions.
 Your task is to return the [alphabetically](https://en.wikipedia.org/wiki/Alphabetical_order) smallest string that can be obtained by performing exactly one swap operation on the string.
 
-**Examples**
-```plaintext
+**Examples:**
+```
 Input: "deed"
 Output: "dede"
 
@@ -1155,9 +1226,8 @@ Output: "alhpabet"
 A list of words is valid if each word starts with the last letter of the previous word. Write a function to check if the given sequence of words is valid.  
 Assume the words are case-insensitive.
 
-**Examples**
-
-```plaintext
+**Examples:**
+```
 Input: ["hello", "orange", "elephant", "tree"]
 Output: True
 Explanation: "hello" -> "orange" -> "elephant" -> "tree".
@@ -1186,7 +1256,7 @@ Explanation: An empty list is trivially valid.
 Write a function to check if two strings are cyclic permutations of each other. Two strings are cyclic permutations if one string can be rotated to match the other.
 
 **Examples:**
-```plaintext
+```
 Input: s1 = "abcde", s2 = "deabc"
 Output: True
 Explanation: Rotating "deabc" gives "abcde".
@@ -1202,11 +1272,11 @@ Output: False
 
 ## Problem 57: Find Missing Page Number
 
-Imagine you are given a book where pages are labeled from 1 to  n , but one page is missing. Write a function to find the missing page number from a given list of page numbers.  
+Imagine you are given a book where pages are labeled from 1 to `n` , but one page is missing. Write a function to find the missing page number from a given list of page numbers.  
 Assume the input is _sorted_.
 
 **Examples:**
-```plaintext
+```
 Input: [1, 2, 3, 4, 6]
 Output: 5
 
@@ -1214,7 +1284,7 @@ Input: [2, 3, 4, 5]
 Output: 1
 ```
 
-**Bonus:** Can we solve this problem faster than linear time?
+**Bonus:** Can we solve this problem faster than [linear time](https://en.wikipedia.org/wiki/Time_complexity#Linear_time)?
 
 ---
 
@@ -1223,7 +1293,7 @@ Output: 1
 Write a function to calculate the alternating sum of digits in an integer. Alternate between adding and subtracting each digit from left to right.
 
 **Examples:**
-```plaintext
+```
 Input: 12345
 Output: 1 - 2 + 3 - 4 + 5 = 3
 
@@ -1238,7 +1308,7 @@ Output: 9 - 8 + 7 - 6 = 2
 A sequence of words is a **palindromic chain** if the words form a palindrome when read as a continuous sentence (ignoring spaces and punctuation). Write a function to check if a list of words forms a palindromic chain.
 
 **Examples:**
-```plaintext
+```
 Input: ["madam", "im", "adam"]
 Output: True
 Explanation: Combining the words gives "madamimadam", which is a palindrome.
@@ -1261,7 +1331,7 @@ A **subarray** is a _contiguous_ portion of an array. For example, in the array 
 Write a function to find the length of the longest subarray in a list of integers where the elements are strictly increasing.
 
 **Examples:**
-```plaintext
+```
 Input: [1, 2, 3, 1, 2]
 Output: 3
 Explanation: The subarray [1, 2, 3] is the longest increasing subarray.
@@ -1270,7 +1340,3 @@ Input: [5, 1, 2, 3, 0]
 Output: 3
 Explanation: The subarray [1, 2, 3] is the longest.
 ```
-
----
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T416OJAV)
