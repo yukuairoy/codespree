@@ -56,34 +56,7 @@ Output: "medium"
 
 ---
 
-## Problem 2: Parking System
-
-Design a parking system for a parking lot with three types of parking spaces: **big**, **medium**, and **small**. Each type has a fixed number of parking slots available.
-
-Implement the `ParkingSystem` class with the following methods:
-
-* `__init__(self, big: int, medium: int, small: int)`: Initializes an object of the `ParkingSystem` class. The constructor accepts three integers representing the number of available parking slots for **big**, **medium**, and **small** cars, respectively.
-* `addCar(self, car_type: str) -> bool`: Checks if there is an available parking slot for the car of the given `car_type`. If there is an available slot for the given car type, the car is parked, the available slots for that type are reduced by 1, and the method returns `True`. If no slots are available for the car type, the method returns `False`.
-
-**Example**:
-
-```python
-# Initialize the parking system with:
-# 2 slots for big cars, 1 slot for medium cars, and 0 slots for small cars.
-ps = ParkingSystem(2, 1, 0)
-
-# Try to park cars of different types.
-print(ps.addCar("big"))     # Output: True (1 slot for big cars now remaining)
-print(ps.addCar("big"))     # Output: True (0 slots for big cars now remaining)
-print(ps.addCar("medium"))  # Output: True (0 slots for medium cars now remaining)
-print(ps.addCar("small"))   # Output: False (no slots available for small cars)
-print(ps.addCar("medium"))  # Output: False (no slots available for medium cars)
-print(ps.addCar("big"))     # Output: False (no slots available for big cars)
-```
-
----
-
-## Problem 3: Validate Credit Card
+## Problem 2: Validate Credit Card
 
 The [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) is a checksum formula used to validate credit card numbers.
 
@@ -114,6 +87,33 @@ The checksum is s1 + s2 = 70 which ends in zero. So, 49927398716 is valid.
 ```
 
 Your task is to implement the Luhn algorithm.
+
+---
+
+## Problem 3: Parking System
+
+Design a parking system for a parking lot with three types of parking spaces: **big**, **medium**, and **small**. Each type has a fixed number of parking slots available.
+
+Implement the `ParkingSystem` class with the following methods:
+
+* `__init__(self, big: int, medium: int, small: int)`: Initializes an object of the `ParkingSystem` class. The constructor accepts three integers representing the number of available parking slots for **big**, **medium**, and **small** cars, respectively.
+* `addCar(self, car_type: str) -> bool`: Checks if there is an available parking slot for the car of the given `car_type`. If there is an available slot for the given car type, the car is parked, the available slots for that type are reduced by 1, and the method returns `True`. If no slots are available for the car type, the method returns `False`.
+
+**Example**:
+
+```python
+# Initialize the parking system with:
+# 2 slots for big cars, 1 slot for medium cars, and 0 slots for small cars.
+ps = ParkingSystem(2, 1, 0)
+
+# Try to park cars of different types.
+print(ps.addCar("big"))     # Output: True (1 slot for big cars now remaining)
+print(ps.addCar("big"))     # Output: True (0 slots for big cars now remaining)
+print(ps.addCar("medium"))  # Output: True (0 slots for medium cars now remaining)
+print(ps.addCar("small"))   # Output: False (no slots available for small cars)
+print(ps.addCar("medium"))  # Output: False (no slots available for medium cars)
+print(ps.addCar("big"))     # Output: False (no slots available for big cars)
+```
 
 ---
 
