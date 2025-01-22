@@ -470,29 +470,20 @@ Output: -321
 
 ---
 
-## Problem 16: K-th Fibonacci Number
+## Problem 16: Minimum Common Value
 
-Find the `k`-th [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
+You are given two sorted integer arrays, `nums1` and `nums2`. Both are in non-decreasing order. Find the smallest integer that appears in both arrays. If there is no common element, return `-1`.
 
-**Examples:**  
+**Examples:**
 ```
-Input: k = 1
-Output: 1
-
-Input: k = 2
-Output: 1
-
-Input: k = 3
+Input: nums1 = [1, 2, 3], nums2 = [2, 4]
 Output: 2
 
-Input: k = 4
-Output: 3
+Input: nums1 = [1, 2, 3, 6], nums2 = [2, 3, 4, 4]
+Output: 2
 
-Input: k = 5
-Output: 5
-
-Input: k = 10
-Output: 55
+Input: nums1 = [1, 3, 5], nums2 = [2, 4, 6]
+Output: -1
 ```
 
 ---
@@ -944,8 +935,11 @@ Write a function to count all integer lattice points `(x, y)` inside or on the b
 
 **Example:**
 ```
-Input:  r = 2
+Input: r = 2
 Output: 13
+Explanation: They are
+  (-2, 0), (-1, -1), (-1, 0), (-1, 1), (0, -2), (0, -1),
+  (0, 0), (0, 1), (0, 2), (1, -1), (1, 0), (1, 1), (2, 0)
 ```
 
 ---
@@ -958,6 +952,9 @@ Write a function to compress a string using run-length encoding.
 ```
 Input: "aaabbc"
 Output: "a3b2c1"
+
+Input: "xxxytttttttzxxqqqqqqqqqq"
+Output: "x3y1t7z1x2q10"
 ```
 
 ---
@@ -1339,4 +1336,158 @@ Explanation: The subarray [1, 2, 3] is the longest increasing subarray.
 Input: [5, 1, 2, 3, 0]
 Output: 3
 Explanation: The subarray [1, 2, 3] is the longest.
+```
+
+---
+
+## Problem 61: Peak Indices
+
+You are given a 0-indexed integer array, `nums`. You need to find all indices `i` (except the first and last) such that `nums[i] > nums[i - 1]` and `nums[i] > nums[i + 1]`.
+
+
+**Examples:**
+```
+Input: [1, 4, 3, 8, 5]
+Output: [1, 3]
+Explanation: nums[0] and nums[4] cannot be peaks because they are
+the first and last elements. nums[1] and nums[3] are strictly greater
+than their neighboring elements.
+
+Input: [2, 4, 4]
+Output: []
+Explanation: nums[0] and nums[2] cannot be peaks because they are
+the first and last elements. nums[1] also can not be a peak because
+it is not strictly greater than nums[2].
+
+Input: [5, 2, 3, 1, 4]
+Output: [2]
+
+Input: [1, 2, 3, 2, 1]
+Output: [2]
+```
+
+---
+
+## Problem 62: Longest Monotonic Subarray
+
+You are given a 0-indexed integer array, `nums`. A subarray is a contiguous portion of the array. We say a subarray is:
+
+* Strictly Increasing if each element is greater than the one before it.
+* Strictly Decreasing if each element is less than the one before it.
+
+Your task is to find the length of the longest subarray that is strictly increasing or strictly decreasing.
+
+**Examples:**
+```
+Input: [2, 2, 2]
+Output: 1
+Explanation: No two consecutive elements are strictly increasing or strictly decreasing,
+so the longest valid subarray is just any single element.
+
+Input: [1, 2, 3, 4]
+Output: 4
+Explanation: The entire array [1, 2, 3, 4] is strictly increasing.
+
+Input: [5, 6, 5, 4, 3, 10]
+Output: 4
+Explanation: [6, 5, 4, 3] is strictly decreasing (length 4).
+
+Input: [1, 3, 5, 4, 2]
+Output: 3
+```
+
+---
+
+## Problem 63: K-th Fibonacci Number
+
+Find the `k`-th [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
+
+**Examples:**  
+```
+Input: k = 1
+Output: 1
+
+Input: k = 2
+Output: 1
+
+Input: k = 3
+Output: 2
+
+Input: k = 4
+Output: 3
+
+Input: k = 5
+Output: 5
+
+Input: k = 10
+Output: 55
+```
+
+---
+
+## Problem 64: Largest Positive Integer With Its Negative
+
+You are given an integer array `nums` (which contains no zero). Your task is to find the largest positive integer `k` such that both `k` and `-k` exist in `nums`. If no such integer exists, return `-1`.
+
+**Examples:**
+```
+Input: [-1, 10, 6, 7, -7, 1]
+Output: 7
+
+Input: [-10, 8, 6, 7, -2, -3, 8]
+Output: -1
+
+Input: [-3, -2, 2, 3]
+Output: 3
+```
+
+---
+
+## Problem 65: Desk Phone Transfer
+
+There are `n` desks in a row, labeled from 0 to `n-1`. At time `0`, desk `0` receives an important phone call. Each second, the call is transferred to the next desk in ascending order. Once it reaches the last desk (`n-1`), it reverses direction and moves back toward desk `0`. This back-and-forth pattern continues indefinitely. Given a time `k` (in seconds), determine which desk the call is at exactly at time `k`.
+
+**Examples:**
+```
+Input: n = 4, k = 5
+Output: 1
+Explanation: Desks are labeled 0, 1, 2, 3. At each second:
+  Time 0: Desk 0
+  Time 1: Desk 1
+  Time 2: Desk 2
+  Time 3: Desk 3
+  Time 4: Desk 2
+  Time 5: Desk 1
+After 5 seconds, the call is at desk 1.
+
+Input: n = 3, k = 7
+Output: 1
+Explanation: Desks are labeled 0, 1, 2. At each second:
+  Time 0: Desk 0
+  Time 1: Desk 1
+  Time 2: Desk 2
+  Time 3: Desk 1
+  Time 4: Desk 0
+  Time 5: Desk 1
+  Time 6: Desk 2
+  Time 7: Desk 1
+After 7 seconds, the call is at desk 1.
+```
+
+---
+
+## Problem 66: Perfect Square
+
+Given an `n x n` grid where each cell contains an integer from `1` to `n`, determine whether **every row** and **every column** contains **all** integers from `1` to `n`.
+
+**Examples:**
+```
+Input: [[1, 2, 3], [3, 1, 2], [2, 3, 1]]
+Output: True
+Explanation: In this case, n = 3, and every row and column contains the
+numbers 1, 2, and 3.
+
+Input: [[1, 2, 2], [3, 1, 2], [2, 3, 1]]
+Output: False
+Explanation: In this case, n = 3, but the first row has a repeated 2.
 ```
