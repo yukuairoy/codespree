@@ -435,14 +435,16 @@ Output: "AEIOUaeiou"
 
 Input: s = "alphabet"
 Output: "alphabet"
+
+Input: s = "alphabEt"
+Output: "Elphabat"
 ```
 
 ---
 
 ## Problem 14: First Unique Character
 
-Given a string, find the index of the first unique character.  
-Return `-1` if no such character exists.
+Given a string, find the index of the first unique character. Return `-1` if no such character exists.
 
 **Examples:**  
 ```
@@ -537,7 +539,7 @@ Output: 10 (5+5)
 
 Implement the function `pow(x, y)` to compute $x^y$.
 
-**Examples:**  
+**Examples:**
 ```
 Input: x = 2, y = 3
 Output: 8
@@ -552,7 +554,7 @@ Output: 0.04
 
 Write a function to compute the number of ways to choose `k` items from `n` items (combinations), denoted as $C(n, k)$.
 
-**Examples:**  
+**Examples:**
 ```
 Input: n = 5, k = 2
 Output: 10
@@ -1314,9 +1316,9 @@ Input: ["hello", "world"]
 Output: False
 Explanation: "helloworld" is not a palindrome.
 
-Input: ["race", "car", "race"]
+Input: ["race", "car"]
 Output: True
-Explanation: "racecarrace" is a palindrome.
+Explanation: "racecar" is a palindrome.
 ```
 
 ---
@@ -1343,7 +1345,6 @@ Explanation: The subarray [1, 2, 3] is the longest.
 ## Problem 61: Peak Indices
 
 You are given a 0-indexed integer array, `nums`. You need to find all indices `i` (except the first and last) such that `nums[i] > nums[i - 1]` and `nums[i] > nums[i + 1]`.
-
 
 **Examples:**
 ```
@@ -1402,7 +1403,7 @@ Output: 3
 
 Find the `k`-th [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_sequence).
 
-**Examples:**  
+**Examples:**
 ```
 Input: k = 1
 Output: 1
